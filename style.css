@@ -1,0 +1,25 @@
+html {
+  margin: 0;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-top: 7%;
+  background-color: black;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  /* width: 650px;
+  height: 1080px;
+  background-color: rgb(251, 230, 255); */
+}
+
+#myCanvas {
+  /* width: 650px;
+  height: 1080px;
+  background-color: rgb(251, 230, 255);
+  padding: 0, 0, 0, 0;
+  margin: 0, 0, 0, 0; */
+}
