@@ -12,11 +12,34 @@ in the u.s.
 this project uses [p5.js](https://p5.js.org/) and uses [p5.clickable by martin del rio](https://github.com/Lartu/p5.clickable).
 
 ## timeline
-- 04/13 finish setting up gameState function. work on asset for start, main game, and end screens
-- 04/18 finish frameCount function for mainGame part. work on asset for instruction and main game screens
-- 04/21 start working on click memory on items for the end screen. set up end screen to show elements clicked and not clicked my player
-- 04/25 make sure everything is finalized and working well (troubleshoot). have all assets finished
-- 04/27 turn in project 3
-- 05/02 add function to move around space/room with arrow keys (or with mouse movement)
-- 05/04 start adding sound effects and animations for text (like it is being typed out)
-- 05/08 make white vignette that coincides with timer. make objects appear to be faded after clicked on
+### 05/02 
+- add button to explore floor/bottom half of desk
+- create nice guys mv (youtube), ino wallpaper, windows lodading screen, club penguin, and girls go game screen asset for pc
+- start resizing pop up assets (cards, cootie, dsi, and glcandy)
+- create wii remote asset (initial image, pop up, and title)
+### 05/04
+- create roller blade asset (initial image, pop up, and title)
+- work on class functionaity for title on title screen (star archive "flashing" effect)
+- finish resizing pop up assets (lps, luckystar, lychee, and pc)
+- create silly band asset (initial image, pop up, and title)
+- create twister asset (initial image, pop up, and title)
+### 05/06
+- start adding sound effect for hovering over and clicking on buttons
+- add background music/noise
+- create how to give a mouse a cookie asset (initial image, pop up, title)
+- create open dsi, my sims kingdom, and cooking mama asset 
+### 05/07
+- create night/day mode assets
+- create bushes/flowers outside window asset (initial image, pop up, title)
+- create mom and dad gardening hat asset (initial image, pop up, title)
+- create jump rope asset (initial image, pop up, and title)
+### 05/09
+- add the picking night or day mode function at the start of the game
+- create timer bar that correlates with how much time you have to explore
+- create coloring pages sticked on wall assets (initial image, pop up, and title)
+- create cute eraser assets (initial image, pop up, title)
+### 05/11
+### 05/13
+### 05/14
+### 05/16
+- last day in class, ask all questions regarding actual code and troubleshoot
