@@ -11,12 +11,14 @@ let pcDiscovery = false;
 let startTime = 0;
 let timeInt = 1800;
 let timeFrame;
+// let titleStarArchive[];
 
 function preload() {
   aboutImg = loadImage('img/about.png');
   aboutImg2 = loadImage('img/about2.png');
   aboutScreenImg = loadImage('img/aboutscreen.png');
   bg = loadImage('img/bg.png');
+  bg2 = loadImage('img/bg2.png');
   blankHolder = loadImage('img/blank.png');
   cardsImg = loadImage('img/cards.png');
   cardsHover = loadImage('img/cardshover.png');
@@ -27,6 +29,8 @@ function preload() {
   cootieClick = loadImage('img/cootieclick.png');
   cootieResults = loadImage('img/cootieresults.png');
   cornerImg = loadImage('img/logo.png');
+  downImg = loadImage('img/down.png');
+  downImg2 = loadImage('img/down2.png');
   dsiImg = loadImage('img/dsi.png');
   dsiClick = loadImage('img/dsiclick.png');
   dsiHover = loadImage('img/dsihover.png');
@@ -68,6 +72,9 @@ function preload() {
   startImg = loadImage('img/start.png');
   startImg2 = loadImage('img/start2.png');
   titleImg = loadImage('img/title.png');
+  // titleStarArchive[0] = titleImg;
+  upImg = loadImage('img/up.png');
+  upImg2 = loadImage('img/up2.png');
   viewResultsImg = loadImage('img/viewresults.png');
   viewResultsImg2 = loadImage('img/viewresults2.png');
 }
@@ -143,6 +150,48 @@ function setup() {
   exit.onOutside = function() {
     exit.imageScale = 1.0;
     exit.image = exitImg;
+  }
+
+  up = new Clickable();
+  up.locate(325, 25);
+  up.color = '#dddddd00';
+  up.text = "";
+  up.strokeWeight = 0;
+  up.image = upImg;
+  up.fitImage = true;
+  up.width = 37;
+  up.height = 30;
+  up.onHover = function() {
+    up.imageScale = 1.2;
+    up.image = upImg2;
+  }
+  up.onPress = function() {
+    gameState = 'mainGame';
+  }
+  up.onOutside = function() {
+    up.imageScale = 1.0;
+    up.image = upImg;
+  }
+
+  down = new Clickable();
+  down.locate(325, 350);
+  down.color = '#dddddd00';
+  down.text = "";
+  down.strokeWeight = 0;
+  down.image = downImg;
+  down.fitImage = true;
+  down.width = 37;
+  down.height = 30;
+  down.onHover = function() {
+    down.imageScale = 1.2;
+    down.image = downImg2;
+  }
+  down.onPress = function() {
+    gameState = 'mainGameExpand';
+  }
+  down.onOutside = function() {
+    down.imageScale = 1.0;
+    down.image = downImg;
   }
 
   cards = new Clickable();
@@ -415,6 +464,9 @@ function draw() {
     case 'mainGame':
       mainScreen();
       break;
+    case 'mainGameExpand':
+      mainGameExpand();
+      break;
     case 'gameOver':
       gameOverScreen();
       break;
@@ -450,7 +502,18 @@ function mainScreen() {
   goodLuckCandy.draw();
   lps.draw();
   origamiStar.draw();
+  down.draw();
   image(lightingImg, 0, 0);
+  image(cornerImg, 0, 0);
+
+  if (frameCount > timeFrame) {
+    gameState = 'gameOver';
+  }
+}
+
+function mainGameExpand() {
+  image(bg2, 0, 0);
+  up.draw();
   image(cornerImg, 0, 0);
 
   if (frameCount > timeFrame) {
