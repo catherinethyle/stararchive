@@ -17,9 +17,9 @@ this project uses [p5.js](https://p5.js.org/) and uses [p5.clickable by martin d
 - DONE add button to explore floor/bottom half of desk
 - DONE start resizing pop up assets (cards, cootie, dsi, and glcandy)
 #### 05/04
-- create floor/bottom half of desk background image
+- DONE create floor/bottom half of desk background image
 - work on class functionaity for title on title screen (star archive "flashing" effect)
-- finish resizing pop up assets (lps, luckystar, lychee, and pc)
+- DONE finish resizing pop up assets (lps, luckystar, lychee, and pc)
 - create twister asset (initial image, pop up, and title)
 #### 05/06
 - start adding sound effect for hovering over and clicking on buttons
