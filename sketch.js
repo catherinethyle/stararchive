@@ -11,6 +11,8 @@ let pcDiscovery = false;
 let startTime = 0;
 let timeInt = 1800;
 let timeFrame;
+// let skyTheme;
+// let skyTheme = false;
 // let titleStarArchive[];
 
 function preload() {
@@ -69,6 +71,11 @@ function preload() {
   pcResults = loadImage('img/pcresults.png');
   playAgainImg = loadImage('img/playagain.png');
   playAgainImg2 = loadImage('img/playagain2.png');
+  skyDayImg = loadImage('img/skyday.png');
+  skyDayCloud = loadImage('img/skydaycloud.png');
+  skyNightImg = loadImage('img/skynight.png');
+  skyNightMoon = loadImage('img/skynightmoonstar.png');
+  skySelectionImg = loadImage('img/skyscreen.png');
   startImg = loadImage('img/start.png');
   startImg2 = loadImage('img/start2.png');
   titleImg = loadImage('img/title.png');
@@ -98,11 +105,71 @@ function setup() {
     start.image = startImg2;
   }
   start.onPress = function() {
-    gameState = 'instruction';
+    gameState = 'skySelection';
   }
   start.onOutside = function() {
     start.imageScale = 1.0;
     start.image = startImg;
+  }
+
+  daySelection = new Clickable();
+  daySelection.locate(175, 125);
+  daySelection.color = '#afdfff';
+  daySelection.text = "";
+  daySelection.strokeWeight = 0;
+  daySelection.image = skyDayCloud;
+  daySelection.fitImage = true;
+  daySelection.width = 150;
+  daySelection.height = 150;
+  daySelection.onHover = function() {
+    daySelection.imageScale = 1.2;
+  }
+  daySelection.onPress = function() {
+    // skyTheme = true;
+  }
+  daySelection.onOutside = function() {
+    daySelection.imageScale = 1.0;
+  }
+
+  nightSelection = new Clickable();
+  nightSelection.locate(350, 125);
+  nightSelection.color = '#5b58a0';
+  nightSelection.text = "";
+  nightSelection.strokeWeight = 0;
+  nightSelection.image = skyNightMoon;
+  nightSelection.fitImage = true;
+  nightSelection.width = 150;
+  nightSelection.height = 150;
+  nightSelection.onHover = function() {
+    nightSelection.imageScale = 1.2;
+  }
+  nightSelection.onPress = function() {
+    // skyTheme = false;
+  }
+  nightSelection.onOutside = function() {
+    nightSelection.imageScale = 1.0;
+  }
+
+
+  nextSky = new Clickable();
+  nextSky.locate(300, 300);
+  nextSky.color = '#d9d1a000';
+  nextSky.text = "";
+  nextSky.strokeWeight = 0;
+  nextSky.image = nextImg;
+  nextSky.fitImage = true;
+  nextSky.width = 70;
+  nextSky.height = 30;
+  nextSky.onHover = function() {
+    nextSky.imageScale = 1.2;
+    nextSky.image = nextImg2;
+  }
+  nextSky.onPress = function() {
+    gameState = 'instruction';
+  }
+  nextSky.onOutside = function() {
+    nextSky.imageScale = 1.0;
+    nextSky.image = nextImg;
   }
 
   next = new Clickable();
@@ -451,12 +518,23 @@ function setup() {
 }
 
 function draw() {
+  // skyTheme = skyDayImg;
+  // if (skyTheme) {
+  //   image(skyDayImg, 0, 0);
+  // } else {
+  //   image(skyNightImg, 0, 0);
+  // }
+  // image(skyTheme, 0, 0);
+  image(skyDayImg, 0, 0);
   background(bg);
 
   //program wireframe
   switch (gameState) {
     case 'title':
       titleScreen();
+      break;
+    case 'skySelection':
+      skySelectionScreen();
       break;
     case 'instruction':
       instructionScreen(); //function
@@ -483,6 +561,14 @@ function titleScreen() {
   background(titleImg);
   image(lightingImg, 0, 0);
   start.draw();
+}
+
+function skySelectionScreen() {
+  image(cornerImg, 0, 0);
+  image(skySelectionImg, 0, 0);
+  daySelection.draw();
+  nightSelection.draw();
+  nextSky.draw();
 }
 
 function instructionScreen() {

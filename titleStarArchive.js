@@ -5,10 +5,9 @@ class TitleStarArchive {
     this.scale = scale;
   }
 
-  preload
-
   dispay() {
-
+    image(titleImg, this.xPos, this.yPos);
+    scale(this.scale);
   }
 
   move() {
