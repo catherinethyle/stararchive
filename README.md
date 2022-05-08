@@ -18,16 +18,15 @@ this project uses [p5.js](https://p5.js.org/) and uses [p5.clickable by martin d
 - DONE start resizing pop up assets (cards, cootie, dsi, and glcandy)
 #### 05/04
 - DONE create floor/bottom half of desk background image
-- work on class functionaity for title on title screen (star archive "flashing" effect)
+- IN PROGRESS work on class functionaity for title on title screen (star archive "flashing" effect)
 - DONE finish resizing pop up assets (lps, luckystar, lychee, and pc)
-- create twister asset (initial image, pop up, and title)
 #### 05/06
 - start adding sound effect for hovering over and clicking on buttons
 - add background music/noise
 - create open dsi, my sims kingdom, and cooking mama asset 
 #### 05/07
-- create night/day mode assets
-- create different web pages (artist statement, game play, initial landing/about game)
+- IN PROGRESS create night/day mode assets (create day and night button for hover)
+- DONE create different web pages (artist statement, game play, initial landing/about game)
 - create bushes/flowers outside window asset (initial image, pop up, title)
 ### week 2
 #### 05/09
@@ -49,6 +48,7 @@ this project uses [p5.js](https://p5.js.org/) and uses [p5.clickable by martin d
 - create jump rope asset (initial image, pop up, and title)
 - create coloring pages sticked on wall assets (initial image, pop up, and title)
 - create mom and dad gardening hat asset (initial image, pop up, title)
+- create twister asset (initial image, pop up, and title)
 ### week 3
 #### 05/16
 - last day in class, ask all questions regarding actual code and troubleshoot
