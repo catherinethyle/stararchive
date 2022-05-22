@@ -89,9 +89,6 @@ function preload() {
   cardsNightImg = loadImage('img/cardsnight.png');
   cardsResults = loadImage('img/cardsresults.png');
   clockGreenImg = loadImage('img/clockgreenday.gif');
-  clockGreenNightImg = loadImage('img/clockgreennight.gif');
-  clockRedImg = loadImage('img/clockredday.gif');
-  clockRedNightImg = loadImage('img/clockrednight.gif');
   cootieImg = loadImage('img/cootie.png');
   cootieHover = loadImage('img/cootiehover.png');
   cootieClick = loadImage('img/cootieclick.png');
@@ -110,8 +107,6 @@ function preload() {
   exitImg2 = loadImage('img/x2.png');
   font = loadFont('txt/sourceCodeProSB.ttf');
   gameOverScreenImg = loadImage('img/gameoverscreen.png');
-  gameOverImg = loadImage('img/gameover.png');
-  gameOverImg2 = loadImage('img/gameover2.png');
   glCandyImg = loadImage('img/glcandy.png');
   glCandyClick = loadImage('img/glcandyclick.png');
   glCandyHover = loadImage('img/glcandyhover.png');
@@ -417,11 +412,6 @@ function setup() {
   bracelet.width = 100;
   bracelet.height = 100;
   let braceletPopUp = braceletHover;
-  // if (skyTheme) {
-  //   cardsPopUp = cardsHover;
-  // } else {
-  //   cardsPopUp = cardsHoverNight;
-  // }
   bracelet.onHover = function() {
     bracelet.imageScale = 1.2;
     image(braceletPopUp, 0, 0); //125, 30
@@ -447,11 +437,6 @@ function setup() {
   cards.width = 40;
   cards.height = 40;
   let cardsPopUp = cardsHover;
-  // if (skyTheme) {
-  //   cardsPopUp = cardsHover;
-  // } else {
-  //   cardsPopUp = cardsHoverNight;
-  // }
   cards.onHover = function() {
     cards.imageScale = 1.2;
     image(cardsPopUp, 0, 0); //125, 30
@@ -475,11 +460,6 @@ function setup() {
   cootieCatcher.width = 50;
   cootieCatcher.hight = 50;
   let cootiePopUp = cootieHover;
-  // if (skyTheme) {
-  //   cootiePopUp = cootieHover;
-  // } else {
-  //   cootiePopUp = cootieHoverNight;
-  // }
   cootieCatcher.onHover = function() {
     cootieCatcher.imageScale = 1.2;
     image(cootiePopUp, 0, 0);
@@ -502,11 +482,6 @@ function setup() {
   dsi.width = 80;
   dsi.height = 80;
   let dsiPopUp = dsiHover;
-  // if (skyTheme) {
-  //   dsiPopUp = dsiHover;
-  // } else {
-  //   dsiPopUp = dsiHoverNight;
-  // }
   dsi.onHover = function() {
     dsi.imageScale = 1.2;
     image(dsiPopUp, 0, 0);
@@ -529,11 +504,6 @@ function setup() {
   hat.width = 165;
   hat.height = 165;
   let hatPopUp = hatHover;
-  // if (skyTheme) {
-  //   dsiPopUp = dsiHover;
-  // } else {
-  //   dsiPopUp = dsiHoverNight;
-  // }
   hat.onHover = function() {
     hat.imageScale = 1.2;
     image(hatPopUp, 0, 0);
@@ -557,11 +527,6 @@ function setup() {
   goodLuckCandy.width = 30;
   goodLuckCandy.height = 30;
   let glCandyPopUp = glCandyHover;
-  // if (skyTheme) {
-  //   glCandyPopUp = glCandyHover;
-  // } else {
-  //   glCandyPopUp = glCandyHoverNight;
-  // }
   goodLuckCandy.onHover = function() {
     goodLuckCandy.imageScale = 1.2;
     image(glCandyPopUp, 0, 0);
@@ -585,11 +550,6 @@ function setup() {
   lps.width = 50;
   lps.height = 50;
   let lpsPopUp = lpsHover;
-  // if (skyTheme) {
-  //   lpsPopUp = lpsHover;
-  // } else {
-  //   lpsPopUp = lpsHoverNight;
-  // }
   lps.onHover = function() {
     lps.imageScale = 1.2;
     image(lpsPopUp, 0, 0);
@@ -613,11 +573,6 @@ function setup() {
   lycheeJelly.width = 40;
   lycheeJelly.height = 40;
   let lycheePopUp = lycheeHover;
-  // if (skyTheme) {
-  //   lycheePopUp = lycheeHover;
-  // } else {
-  //   lycheePopUp = lycheeHoverNight;
-  // }
   lycheeJelly.onHover = function() { //when on hover
     lycheeJelly.imageScale = 1.2;
     image(lycheePopUp, 0, 0);
@@ -641,11 +596,6 @@ function setup() {
   mouse.width = 200;
   mouse.height = 200;
   mousePopUp = mouseHover;
-  // if (skyTheme) {
-  //   rollerSkatesPopUp = rollerSkatesHover;
-  // } else {
-  //   rollerSkatesPopUp = rollerSkatesHoverNight;
-  // }
   mouse.onHover = function() {
     mouse.imageScale = 1.2;
     image(mousePopUp, 0, 0);
@@ -669,11 +619,6 @@ function setup() {
   pc.width = 200;
   pc.height = 200;
   pcPopUp = pcHover;
-  // if (skyTheme) {
-  //   pcPopUp = pcHover;
-  // } else {
-  //   pcPopUp = pcHoverNight;
-  // }
   pc.onHover = function() {
     pc.imageScale = 1.2;
     image(pcPopUp, 0, 0);
@@ -697,11 +642,6 @@ function setup() {
   pez.width = 90;
   pez.height = 90;
   pezPopUp = pezHover;
-  // if (skyTheme) {
-  //   pcPopUp = pcHover;
-  // } else {
-  //   pcPopUp = pcHoverNight;
-  // }
   pez.onHover = function() {
     pez.imageScale = 1.2;
     image(pezPopUp, 0, 0);
@@ -725,11 +665,6 @@ function setup() {
   rollerSkates.width = 150;
   rollerSkates.height = 150;
   rollerSkatesPopUp = rollerSkatesHover;
-  // if (skyTheme) {
-  //   rollerSkatesPopUp = rollerSkatesHover;
-  // } else {
-  //   rollerSkatesPopUp = rollerSkatesHoverNight;
-  // }
   rollerSkates.onHover = function() {
     rollerSkates.imageScale = 1.2;
     image(rollerSkatesPopUp, 0, 0);
@@ -753,11 +688,6 @@ function setup() {
   origamiStar.width = 50;
   origamiStar.height = 50;
   origamiStarPopUp = origamiStarHover;
-  // if (skyTheme) {
-  //   origamiStarPopUp = origamiStarHover;
-  // } else {
-  //   origamiStarPopUp = origamiStarHoverNight;
-  // }
   origamiStar.onHover = function() {
     origamiStar.imageScale = 1.2;
     image(origamiStarPopUp, 0, 0);
@@ -781,11 +711,6 @@ function setup() {
   wii.width = 110;
   wii.height = 110;
   wiiPopUp = wiiHover;
-  // if (skyTheme) {
-  //   origamiStarPopUp = origamiStarHover;
-  // } else {
-  //   origamiStarPopUp = origamiStarHoverNight;
-  // }
   wii.onHover = function() {
     wii.imageScale = 1.2;
     image(wiiPopUp, 0, 0);
@@ -953,7 +878,6 @@ function mainScreen() {
     goodLuckCandy.image = glCandyImg;
     lps.image = lpsImg;
     origamiStar.image = origamiStarImg;
-    // titleStarArchive.display();
   } else {
     image(skyNightDesk1Img, 0, 0);
     image(skyNightLightImg, 0, 0);
@@ -979,10 +903,6 @@ function mainScreen() {
   image(lightingImg, 0, 0);
   image(cornerImg, 0, 0);
   timerClock();
-
-  // if (frameCount > timeFrame) {
-  //   gameState = 'gameOver';
-  // }
 }
 
 function mainGameExpand() {
@@ -1000,7 +920,6 @@ if (skyTheme) {
   rollerSkates.image = rollerSkatesNightImg;
   mouse.image = mouseNightImg;
   pez.image = pezNightImg;
-  clockTimerImg = clockGreenNightImg;
   background(skyNightDesk2Img);
 }
 
@@ -1013,10 +932,6 @@ if (skyTheme) {
   bracelet.draw();
   image(lightingImg2, 0, 0);
   timerClock();
-
-  // if (frameCount > timeFrame) {
-  //   gameState = 'gameOver';
-  // }
 }
 
 function gameOverScreen() {
@@ -1025,7 +940,6 @@ function gameOverScreen() {
   image(gameOverScreenImg, 0, 0);
   textAlign(LEFT);
   fill(0);
-  // image(gameOverImg, 250, 150);
   if (skyTheme) {
     text(outroDay[randomIndexOutroDay].word + "so you're going to have to leave! Come back some other time to explore again! I hope you had fun, please proceed to the next screen to see your personalized results. :D P.S. you better have not left the room as a mess when you were looking around because my mom will scold me :/.", 25, 135, 625, 400);
   } else {
@@ -1039,28 +953,7 @@ function endScreen() {
   image(cornerImg, 0, 0);
   image(endResultImg, 0, 0);
   playAgain.draw();
-  // about.draw();
-  // if (skyTheme) {
-  //   cardsResultsDisplay = cardsResults;
-  //   cootieResultsDisplay = cootieResults;
-  //   dsiResultsDisplay = dsiResults;
-  //   glCandyResultsDisplay = glCandyResults;
-  //   lockedResultsDisplay = lockedResults;
-  //   lpsResultsDisplay = lpsResults;
-  //   lycheeResultsDisplay = lycheeResults;
-  //   origamiStarResultsDisplay = origamiStarResults;
-  //   pcResultsDisplay = pcResults;
-  // } else {
-  //   cardsResultsDisplay = cardsResultsNight;
-  //   cootieResultsDisplay = cootieResultsNight;
-  //   dsiResultsDisplay = dsiResultsNight;
-  //   glCandyResultsDisplay = glCandyResultsNight;
-  //   lockedResultsDisplay = lockedResultsNight;
-  //   lpsResultsDisplay = lpsResultsNight;
-  //   lycheeResultsDisplay = lycheeResultsNight;
-  //   origamiStarResultsDisplay = origamiStarResultsNight;
-  //   pcResultsDisplay = pcResultsNight;
-  // }
+
   braceletResultsDisplay = braceletResults;
   cardsResultsDisplay = cardsResults;
   cootieResultsDisplay = cootieResults;

@@ -75,16 +75,6 @@ canvas {
   border-style: dashed;
 }
 
-#nav {
-  /* padding-left: 40%;
-  padding-right: 40%;
-  width: 20%; */
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  /* display: flex; */
-}
-
 #p5sketch {
   display: flex;
   justify-content: center;
@@ -96,8 +86,4 @@ canvas {
   width: 700px;
   margin-left: 20%;
   margin-right: 20%;
-  /* padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 15px;
-  padding-bottom: 15px; */
 }
