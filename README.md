@@ -30,7 +30,7 @@ this project uses [p5.js](https://p5.js.org/) and uses [p5.clickable by martin d
 - create bushes/flowers outside window asset (initial image, pop up, title)
 ### week 2
 #### 05/09
-- add the picking night or day mode function at the start of the game
+- DONE add the picking night or day mode function at the start of the game
 - create timer bar that correlates with how much time you have to explore
 - create cute eraser assets (initial image, pop up, title)
 - work on initial landing/about game web page
@@ -38,12 +38,12 @@ this project uses [p5.js](https://p5.js.org/) and uses [p5.clickable by martin d
 - create wii remote asset (initial image, pop up, and title)
 - create nice guys mv (youtube), ino wallpaper, windows lodading screen, club penguin, and girls go game screen asset for pc
 - create how to give a mouse a cookie asset (initial image, pop up, title)
-- work on main game play web page
+- IN PROGRESS work on main game play web page
 #### 05/13
 - create roller blade asset (initial image, pop up, and title)
 - create silly band asset (initial image, pop up, and title)
 - create fleece lion blanket asset (initial image, pop up, and title)
-- work on artist statement web page
+- IN PROGRESS work on artist statement web page
 #### 05/14
 - create jump rope asset (initial image, pop up, and title)
 - create coloring pages sticked on wall assets (initial image, pop up, and title)
